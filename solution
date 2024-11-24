@@ -1,8 +1,12 @@
 Checking Your Answer on Mac/Linux:
 
-  Copy and paste the following command, replace John Doe with the suspect's name you want to check, and execute it from inside the main clmystery directory:
+  Make the solution.sh file in the clmystery directory executable with:
 
-  echo "John Doe" | $(command -v md5 || command -v md5sum) | grep -qif /dev/stdin encoded && echo CORRECT\! GREAT WORK, GUMSHOE. || echo SORRY, TRY AGAIN.
+  sudo chmod ug+x solution.sh
+
+  Then run it with:
+
+  ./solution.sh
 
 Checking Your Answer on Windows:
 
